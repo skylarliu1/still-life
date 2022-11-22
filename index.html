@@ -25,11 +25,35 @@
     background: silver;
   }
   .moka {
-    height: 150px;
-    width: 180px;
+    height: 32px;
+    width: 140px;
     bottom: 200px;
-    right: 50px;
+    right: 85px;
     position: absolute;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(140,44,0,1) 11%, 
+      rgba(169,47,0,1) 29%, rgba(233,92,21,1) 65%, 
+      rgba(211,83,29,1) 100%);
+  }
+  .moka-lid {
+    height: 40px;
+    width: 100px;
+    bottom: 150px;
+    right: 15px;
+    position: absolute;
+    border-radius: 70%;
+    transform: perspective(200px);
+    background: radial-gradient(circle, rgba(173,62,10,1) 13%, rgba(156,46,0,1) 33%, rgba(213,113,70,1) 42%, rgba(168,61,10,1) 52%, rgba(140,54,33,1) 68%, rgba(189,159,135,1) 89%);
+
+  }
+  .moka-body {
+    height: 130px;
+    width: 150px;
+    bottom: 25px;
+    right: -10px;
+    position: absolute;
+    border-radius: 15px;
+    transform: perspective(15px) rotateX(-1deg);
     background: linear-gradient(90deg, rgba(177,141,122,1) 0%, 
       rgba(143,72,36,1) 5%, rgba(123,46,7,1) 8%, 
       rgba(169,51,0,1) 28%, rgba(165,37,0,1) 29%, 
@@ -37,11 +61,40 @@
       rgba(164,40,0,1) 62%, rgba(201,64,0,1) 63%, 
       rgba(176,51,0,1) 83%, rgba(201,64,0,1) 86%, 
       rgba(210,73,7,1) 90%, rgba(229,96,36,1) 100%);
+    
+  }
+  .moka-base {
+    height: 120px;
+    width: 140px;
+    bottom: -111px;
+    right: -10px;
+    position: absolute;
+    border-radius: 15px;
+    transform: perspective(15px) rotateX(1.5deg);
+    background: linear-gradient(90deg, rgba(188,143,23,1) 1%, 
+      rgba(118,83,6,1) 9%, rgba(153,113,14,1) 17%, 
+      rgba(205,158,27,1) 28%, rgba(179,147,72,1) 35%, 
+      rgba(153,135,117,1) 38%, rgba(143,125,106,1) 42%, 
+      rgba(172,149,132,1) 48%, rgba(179,159,138,1) 53%, 
+      rgba(246,226,202,1) 72%, rgba(246,226,202,1) 74%, 
+      rgba(246,226,202,1) 79%, rgba(215,194,173,1) 89%, 
+      rgba(152,132,112,1) 96%, rgba(152,132,112,1) 97%, 
+      rgba(246,226,202,1) 98%, rgba(184,162,144,1) 99%);
+  }
+  .can-reflection {
+    height: 45px;
+    width: 55px;
+    bottom: -117px;
+    right: 80px;
+    position: absolute;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(160,20,34,0.7) 36%, rgba(207,60,66,0.6) 60%);
+
   }
   .can-1 {
     height: 170px;
     width: 150px;
-    bottom: 90px;
+    bottom: 110px;
     right: 200px;
     position: absolute;
     background: linear-gradient(90deg, rgba(251,208,40,1) 3%, 
@@ -52,7 +105,7 @@
   .can-2 {
     height: 170px;
     width: 150px;
-    bottom: 100px;
+    bottom: 120px;
     right: 290px;
     position: absolute;
 		background: linear-gradient(90deg, rgba(251,208,40,1) 3%, rgba(228,190,42,1) 11%, rgba(179,156,40,1) 29%)
@@ -64,14 +117,20 @@
 <div class="frame">
   <div class="table"></div>
   <div class="moka">
-  	<div class="moka-base"></div>
-  	<div class="moka-handle"></div>
-  	<div class="moka-top"></div>
+    <div class="moka-lid"></div>
+    <div class="moka-body"></div>
+		<div class="moka-base"></div>
+    <div class="can-reflection"></div>
+		<div class="moka-top"></div>
+		<div class="moka-handle"></div>
   </div>
   <div class="can-2">
     
   </div>
   <div class="can-1">
+    
+  </div>
+  <div class="mug">
     
   </div>
 </div>
